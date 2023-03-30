@@ -19,6 +19,10 @@ headerr {
   font-size: 14px;
 }
 
+header{
+  padding-top: 7%;
+}
+
 nav ul {
   list-style-type: none;
   display: flex;
@@ -192,4 +196,179 @@ textarea{
   background: rgba(162, 1, 1, 0.3);
   border-radius: 3px;
   transition: all 1s ease;
+}
+
+/*---------------------*/
+
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  font-size: 100%;
+  font-weight: 100;
+  color: 
+white;
+  backdrop-filter: blur(8px) brightness(80%);
+  opacity: 1%;
+}
+.text-overlayb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  font-size: 100%;
+  font-weight: 100;
+  color: 
+white;
+  backdrop-filter: blur(8px) brightness(80%);
+}
+.text-overlayc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  font-size: 100%;
+  font-weight: 100;
+  color: 
+white;
+  backdrop-filter: blur(8px) brightness(80%);
+}
+
+.text-overlay:hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  font-size: 100%;
+  font-weight: 100;
+  color: 
+white;
+  backdrop-filter: blur(8px) brightness(80%);
+  visibility: visible;
+  opacity: 100%;}
+  p{
+    height:100%;
+  }
+
+img{z-index: 10;}
+
+.mfly{
+    visibility: hidden;
+}
+.manu{
+    visibility: hidden;
+}
+
+.mfly2{
+    display: flex;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    height: 6%;
+    width: 100%;
+    visibility: visible;
+    flex-basis: 100%;
+    z-index: 200;
+}
+.mflyb{
+    display: flex;
+    position: fixed;
+    background-color:black;
+    top: 6%;
+    left: 0;
+    height: 4%;
+    width: 100%;
+    visibility: visible;
+    flex-basis: 100%;
+    z-index: 100;
+}
+.manu2{
+    border-bottom: solid 1px #F2CA52;
+    visibility: visible;
+    flex-basis: 21%;
+    width: 21%;
+    height: 100%;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (max-width: 768px){
+  .mfly2{
+    visibility: hidden;
+}
+.manu2{
+    visibility: hidden;
+}
+    .mfly{
+    position: fixed;
+    bottom: 0%;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    z-index: 10;
+    visibility: visible;
+    flex-basis: 100%;
+}
+.manu{
+    border-top: solid 1px #F2CA52;
+    display:inline-block;
+    margin: 0 -1%;
+    visibility: visible;
+    flex-basis: 25%;
+    width: 26%;
+    height: 100%;
+    padding: 0;
+}
+}
+button{
+    height: 100%; 
+    background-color: black;  
+    width: 110%;
+    cursor: pointer;
+    color: #F2CA52;
+    border-color: black;
+    border-style: solid;
+}
+button:hover{
+    height: 100%; 
+    background-color: #F2CA52;  
+    width: 110%;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    transition: 0.2s;
+}
+.manu:hover{
+    border-top: solid 1px #F2CA52;
+    display:inline-block;
+    margin: 0 -1%;
+    visibility: visible;
+    flex-basis: 25%;
+    width: 26%;
+    height: 100%;
+    padding: 0;
+}
+button:active{
+    height: 100%; 
+    background-color: white;  
+    width: 110%;
+    cursor: pointer;
+    color: #F2CA52;
+    border-color: black;
+    border-style: solid;
+    transition: 0.1s;
+}
+.buscador{
+    background-color: #fbfbfb; 
+    width: 30%; 
+    height: 92%; 
+    border-radius: 10px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #c5c5c5; 
+    top: -22%;
+    left: 70%;
+    position: absolute;
 }
