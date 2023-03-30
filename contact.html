@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="style/form.css" />
+    <link rel="stylesheet" type="text/css" href="style/estiloInicio.css" />
+    <title>Contactanos</title>
+  </head>
+  <body>
+    <header>
+      <img src="imagenes/logob.png" style="height: 20%; width: 20%; object-fit: contain;"/>
+
+      <nav>
+        <ul>
+          <li>
+            <strong><a href="index.html">Inicio</a></strong>
+          </li>
+          <li>
+            <strong><a href="menu.html">Menu</a></strong>
+          </li>
+          <li>
+            <strong><a href="nosotros.html">Nosotros</a></strong>
+          </li>
+          <li>
+            <strong><a href="contactanos.html">Contacto</a></strong>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <style class="text/css"></style>
+  
+        <section>
+            <h3>Contactanos</h3><br>
+
+            <form action="submeter-formulario.php" method="post">
+              <p>
+                <label for="nombre" class="colocar_nombre"
+                  >Nombre
+                </label>
+                <input
+                  type="text"
+                  name="introducir_nombre"
+                  id="nombre"
+                  required="obligatorio"
+                  placeholder="Escribe tu nombre"
+                />
+              </p>
+
+              <p>
+                <label for="email" class="colocar_email"
+                  >Email
+                </label>
+                <input
+                  type="email"
+                  name="introducir_email"
+                  id="email"
+                  required="obligatorio"
+                  placeholder="Escribe tu Email"
+                />
+              </p>
+
+              <p>
+                <label for="telefone" class="colocar_telefono"
+                  >Teléfono
+                </label>
+                <input
+                  type="tel"
+                  name="introducir_telefono"
+                  id="telefono"
+                  placeholder="Escribe tu teléfono"
+                />
+              </p>
+
+              <p>
+                <label for="website" class=""
+                  >Direccion
+                </label>
+                <input
+                  type="url"
+                  name="introducir_direccion"
+                  id="direccion"
+                  placeholder="Escribe la direccion de envio"
+                />
+              </p>
+
+              <p>
+                <label for="asunto" class="colocar_asunto"
+                  >Asunto
+                </label>
+                <input
+                  type="text"
+                  name="introducir_asunto"
+                  id="assunto"
+                  required="obligatorio"
+                  placeholder="Escribe un asunto"
+                />
+              </p>
+
+              <p>
+                <label for="mensaje" class="colocar_mensaje"
+                  >Mensaje
+                </label>
+                <textarea
+                  name="introducir_mensaje"
+                  class="texto_mensaje"
+                  id="mensaje"
+                  required="obligatorio"
+                  placeholder="Deja aquí tu comentario..."
+                ></textarea>
+              </p>
+
+              <button class="buttonc" type="submit" name="enviar_formulario" id="enviar">
+                <p>Enviar</p>
+              </button>
+
+            </form>
+        </section>
+
+        <section style="flex-basis: 66%;padding: 0%;"><center>
+ 
+          <img src="https://www.nevistas.com/ul/4/2019/09/04/08.jpg" style="height: 100%; width: 100%; object-fit: contain;">
+
+        </center></section>
+
+        <section style="flex-basis: 99%; padding: 0%;"><center>
+
+          <iframe class="mapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.1664304992696!2d-89.19575508472143!3d13.70836790199076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6330946c97eb9b%3A0x6ce3ebd8c82585a5!2sCONEXION!5e0!3m2!1ses!2ssv!4v1679678806110!5m2!1ses!2ssv"
+          width="100%"
+          height="500px"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        </center></section>
+  
+      </main>
+      <footer>
+        <p>
+          <strong> La Granjita Feliz 2023. Todos los derechos reservados.</strong>
+        </p>
+        <br />
+        <p>
+          Si deseas ordenar a través de nuestro call center llama al (503)
+          2257-7777
+        </p>
+        <br />
+        <p>Formas de Pago:</p>
+  
+        <figure class="formasPago">
+          <img
+            class="iconosFormasdePago"
+            src="imagenes/efectivo.jpg"
+            alt="Dinero en Efetivo"
+          />
+          <img
+            class="iconosFormasdePago"
+            src="imagenes/mastercard-logo.jpg"
+            alt="Mastercard"
+          />
+          <img
+            class="iconosFormasdePago"
+            src="imagenes/visa-logo.jpg"
+            alt="Visa"
+          /> 
+          <figure>
+            <a href="https://es-la.facebook.com/"
+              ><img
+                class="iconosRedes"
+                src="imagenes/icons8-facebook.svg"
+                alt="logo Facebook"
+            /></a>
+            <a href="https://twitter.com/?lang=es"
+              ><img
+                class="iconosRedes"
+                src="imagenes/icons8-twitter.svg"
+                alt="logo Twitter"
+            /></a>
+            <a href="https://www.instagram.com/">
+              <img
+                class="iconosRedes"
+                src="imagenes/icons8-instagram.svg"
+                alt="logo Instagram"
+            /></a>
+          </figure>
+        </figure>
+      </footer>
+    </body>
+  </html>
