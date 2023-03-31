@@ -7,135 +7,123 @@
     <link rel="stylesheet" href="container.css" />
     
   </head>
-  <body style="background-color: #2a2a2a">
+  <body style="background-color: #2a2a2a;">
     <header>
-      <img width="200" height="50" src="imagenes/logob.png" />
-    
-      <nav>
-        <ul>
-          <li>
-            <strong><a href="index.html">Inicio</a></strong>
-          </li>
-    
-          <li>
-            <strong><a href="menu.html">Menu</a></strong>
-          </li>
-    
-          <li>
-            <strong><a href="nosotros.html">Nosotros</a></strong>
-          </li>
-          <li>
-            <strong><a href="contactanos.html">Contacto</a></strong>
-          </li>
-          <li>
-            <input
-              class="buscador"
-              type="text"
-              name="buscador"
-              placeholder="buscar"
-            />
-          </li>
-        </ul>
-      </nav>
+
+        <div class="mfly2">
+        <button class="manu2" onclick="window.location.href='index.html'">INICIO</button>
+        <button class="manu2" onclick="window.location.href='menu.html'">MENU</button>
+        <img class="manu2" src="imagenes/logob.png" style="height: 166%; background-color: black; visibility: visible;width: 100%; @media (max-width: 768px){left: 0;}border-bottom: 0;">
+        <button class="manu2" onclick="window.location.href='nosotros.html'">NOSOTROS</button>
+        <button class="manu2" onclick="window.location.href='contact.html'">CONTACTO</button>
+        <!--<button style="background-color: #ffcad4; color: white;" class="manu2" onclick="window.location.href='http://localhost/login/login_form.php'">INICIAR SESION</button>-->
+      </div>
+
+      <style>
+
+        .huayra{
+          width: 300px;
+          height: 300px;
+          background-color:gray;
+          position: fixed;
+          top: 10%;
+          left: -285px;
+          transition: 0.4s;
+          z-index: 500;
+        }
+        .huayra:hover{
+          left: 0;
+          transition: 0.4s;
+        }
+
+      </style>
+
+      <div class="huayra">FLOTO</div>
+
     </header>
-    <div class="slider">
+    <div class="slider" style="max-width: 1280px;">
       <ul>
         <li>
-          <img src="imagenes/LOMEJOR.jpg" alt="" />
+          <img src="https://i0.wp.com/criteriohidalgo.com/wp-content/uploads/2018/11/3e53f637-cookylaucha_20180622_th_landscape_tuetano.jpg?fit=1920%2C1080&ssl=1" alt="" />
         </li>
         <li>
           <img
-            src="imagenes/Filete-cubierto-de-oro-shutterstock_2131621529.webp"
+            src="https://foodandtravel.mx/wp-content/uploads/2017/11/Carne-de-res.jpg"
             alt=""
           />
         </li>
         <li>
-          <img src="imagenes/tres.png" alt="" />
+          <img src="https://static-sevilla.abc.es/media/gurmesevilla/2013/10/chuleta-venado-verduras.jpg" alt="" />
         </li>
         <li>
-          <img src="imagenes/" alt="" />
+          <img src="https://s1.1zoom.me/b5559/853/Meat_products_Mushrooms_Tomatoes_527520_1920x1080.jpg" alt="" />
         </li>
       </ul>
     </div>
     <main>
-      <section >
-        <h2>Prueba Nuestras Nuevas Promociones</h2>
-        <a href="promos.html"><img
-          class="fotosMenu"
-          width="400"
-          height="300"
-          src="imagenes/jugoso-filete-cerdo-parrilla-hueso.jpg"
-          alt="Filete de Cerdo"
-        /> </a>
-        
-        <p>
+
+        <style>
+
+          </style>
+
+
+
+      <section style="padding: 0%;">
+        <h2 class="text-overlayb">Prueba Nuestras Nuevas Promociones</h2>
+        <img src="imagenes/jugoso-filete-cerdo-parrilla-hueso.jpg" style="height: 100%; width: 100%; object-fit: contain"/>
+        <p class="text-overlay">
           Nuevas promociones exquisitas para que degustes nuestro sabor
           excelente.
         </p>
       </section>
-      <section>
-        <h2>Nuevos Platos</h2>
-        <a href="promos.html">
-        <img
-          class="fotosMenu"
-          width="400"
-          height="300"
-          src="imagenes/49857.jpg"
-          alt="Hamburguesa de Cerdo"
-        /></a>
-        <p>
+
+      <section style="padding: 0%;">
+        <h2 class="text-overlayb">Nuevos Platos</h2>
+        <img src="imagenes/49857.jpg" style="height: 100%; width: 100%; object-fit: contain"/>
+        <p class="text-overlay">
           Disfruta nuetros nuevos platos exquisitos y ahora con nuevas salsas y
           bebidas
         </p>
       </section>
 
-      <section>
-        <h2>Productos Importados</h2>
-        <img
-          class="fotosMenu"
-          width="400"
-          height="300"
-          src="imagenes/22623330-asado-de-cerdo-en-un-plato-marrón.webp"
-          alt="Cerdo Importado"
-        />
-        <p>Pruebas nuestros nuevos platillos recien ingresados al país</p>
+      <section style="padding: 0%;">
+        <h2 class="text-overlayb">Productos Importados</h2>
+        <img src="imagenes/22623330-asado-de-cerdo-en-un-plato-marrón.webp" style="height: 100%; width: 100%; object-fit: contain"/>
+        <p class="text-overlay">Pruebas nuestros nuevos platillos recien ingresados al país</p>
       </section>
-      <section>
-        <h2>Platillos Refinados</h2>
-        <img
-          class="fotosMenu"
-          width"400"
-          height="300"
-          src="imagenes/Filete-cubierto-de-oro-shutterstock_2131621529.webp"
-          alt="Filete bañado de oro"
-        />
-        <p>
+
+      <section style="padding: 0%;">
+        <h2 class="text-overlayb">Platillos Refinados</h2>
+        <img src="imagenes/Filete-cubierto-de-oro-shutterstock_2131621529.webp" style="height: 100%; width: 100%; object-fit: contain"/>
+        <p class="text-overlay">
           Prueba nuestros platillos de la más alta calidad para clientes
           exclusivos, como tú!
         </p>
       </section>
-      <section>
-        <h2>Licores y Bebidas Frías</h2>
-        <img
-          class="fotosMenu"
-          width="400"
-          height="300"
-          src="imagenes/frx_1790-e1586468359204.jpg"
-          alt="Bebidas"
-        />
-        <p>Aprovecha esta promoción de 2 bebidas por el precio de 1</p>
+
+      <section style="padding: 0%;">
+        <h2 class="text-overlayb">Bebidas Frías y Licores</h2>
+        <img src="https://enlacocina.b-cdn.net/wp-content/uploads/2018/07/bebidas-refrescantes.jpg" style="height: 100%; width: 100%; object-fit: contain"/>
+        <p class="text-overlay">Aprovecha esta promoción de 2 bebidas por el precio de 1</p>
       </section>
-      <section>
-        <h2>Zona de Juegos ya Lista</h2>
-        <img
-          class="fotosMenu"
-          width="400"
-          height="300"
-          src="imagenes/zona-juegos-jkl470m6mq.jpg"
-          alt="Zona de Juegos"
-        />
-        <p>Nueva zona de juegos para que los niños disfruten y se diviertan</p>
+
+      <section style="padding: 0%;">
+        <h2 class="text-overlayb">Zona de Juegos ya Lista</h2>
+        <img src="imagenes/zona-juegos-jkl470m6mq.jpg" style="height: 100%; width: 100%; object-fit: contain"/>
+        <b class="text-overlayc">Nueva zona de juegos para que los niños disfruten y se diviertan</b>
       </section>
+      <div class="mflyb">
+        <button id="botonci" style="width: 130px; background-color: #DA291C;">INICIAR SESION</button>
+        <input class="buscador" type="text" name="buscador" placeholder="Buscar"/>
+      </div>
+
+      <div class="mfly">
+        <button class="manu">INICIO</button>
+        <button class="manu">MENU</button>
+        <button class="manu">NOSOTROS</button>
+        <button class="manu">CONTACTO</button>
+      </div>
+
     </main>
     <footer>
       <p>
@@ -152,40 +140,54 @@
       <figure class="formasPago">
         <img
           class="iconosFormasdePago"
-          src="imagenes/efectivo.jpg"
+          src="imagenes/icons/efectivo.png"
           alt="Dinero en Efetivo"
         />
         <img
           class="iconosFormasdePago"
-          src="imagenes/mastercard-logo.jpg"
+          src="imagenes/icons/mastercard.png"
           alt="Mastercard"
         />
         <img
           class="iconosFormasdePago"
-          src="imagenes/visa-logo.jpg"
+          src="imagenes/icons/visa.png"
           alt="Visa"
         />
-        <figure>
-          <a href="https://es-la.facebook.com/"
-            ><img
-              class="iconosRedes"
-              src="imagenes/icons8-facebook.svg"
-              alt="logo Facebook"
-          /></a>
-          <a href="https://twitter.com/?lang=es"
-            ><img
-              class="iconosRedes"
-              src="imagenes/icons8-twitter.svg"
-              alt="logo Twitter"
-          /></a>
-          <a href="https://www.instagram.com/">
-            <img
-              class="iconosRedes"
-              src="imagenes/icons8-instagram.svg"
-              alt="logo Instagram"
-          /></a>
-        </figure>
+
+      </figure>
+      <figure class="formasPago">
+        <a href="https://es-la.facebook.com/"
+          ><img
+            class="iconosRedes"
+            src="imagenes/icons8-facebook.svg"
+            alt="logo Facebook"
+        /></a>
+        <a href="https://twitter.com/?lang=es"
+          ><img
+            class="iconosRedes"
+            src="imagenes/icons8-twitter.svg"
+            alt="logo Twitter"
+        /></a>
+        <a href="https://www.instagram.com/">
+          <img
+            class="iconosRedes"
+            src="imagenes/icons8-instagram.svg"
+            alt="logo Instagram"
+        /></a>
       </figure>
     </footer>
+
+
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+      </script>
+
+    
   </body>
 </html>
