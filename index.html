@@ -1,193 +1,111 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La Granjita Feliz</title>
-    <link rel="stylesheet" href="style/estiloInicio.css" />
-    <link rel="stylesheet" href="container.css" />
-    
-  </head>
-  <body style="background-color: #2a2a2a;">
-    <header>
-
-        <div class="mfly2">
-        <button class="manu2" onclick="window.location.href='index.html'">INICIO</button>
-        <button class="manu2" onclick="window.location.href='menu.html'">MENU</button>
-        <img class="manu2" src="imagenes/logob.png" style="height: 166%; background-color: black; visibility: visible;width: 100%; @media (max-width: 768px){left: 0;}border-bottom: 0;">
-        <button class="manu2" onclick="window.location.href='nosotros.html'">NOSOTROS</button>
-        <button class="manu2" onclick="window.location.href='contact.html'">CONTACTO</button>
-        <!--<button style="background-color: #ffcad4; color: white;" class="manu2" onclick="window.location.href='http://localhost/login/login_form.php'">INICIAR SESION</button>-->
-      </div>
-
-      <style>
-
-        .huayra{
-          width: 300px;
-          height: 300px;
-          background-color:gray;
-          position: fixed;
-          top: 10%;
-          left: -285px;
-          transition: 0.4s;
-          z-index: 500;
-        }
-        .huayra:hover{
-          left: 0;
-          transition: 0.4s;
-        }
-
-      </style>
-
-      <div class="huayra">FLOTO</div>
-
-    </header>
-    <div class="slider" style="max-width: 1280px;">
-      <ul>
-        <li>
-          <img src="https://i0.wp.com/criteriohidalgo.com/wp-content/uploads/2018/11/3e53f637-cookylaucha_20180622_th_landscape_tuetano.jpg?fit=1920%2C1080&ssl=1" alt="" />
-        </li>
-        <li>
-          <img
-            src="https://foodandtravel.mx/wp-content/uploads/2017/11/Carne-de-res.jpg"
-            alt=""
-          />
-        </li>
-        <li>
-          <img src="https://static-sevilla.abc.es/media/gurmesevilla/2013/10/chuleta-venado-verduras.jpg" alt="" />
-        </li>
-        <li>
-          <img src="https://s1.1zoom.me/b5559/853/Meat_products_Mushrooms_Tomatoes_527520_1920x1080.jpg" alt="" />
-        </li>
-      </ul>
-    </div>
-    <main>
-
-        <style>
-
-          </style>
-
-
-
-      <section style="padding: 0%;">
-        <h2 class="text-overlayb">Prueba Nuestras Nuevas Promociones</h2>
-        <img src="imagenes/jugoso-filete-cerdo-parrilla-hueso.jpg" style="height: 100%; width: 100%; object-fit: contain"/>
-        <p class="text-overlay">
-          Nuevas promociones exquisitas para que degustes nuestro sabor
-          excelente.
-        </p>
-      </section>
-
-      <section style="padding: 0%;">
-        <h2 class="text-overlayb">Nuevos Platos</h2>
-        <img src="imagenes/49857.jpg" style="height: 100%; width: 100%; object-fit: contain"/>
-        <p class="text-overlay">
-          Disfruta nuetros nuevos platos exquisitos y ahora con nuevas salsas y
-          bebidas
-        </p>
-      </section>
-
-      <section style="padding: 0%;">
-        <h2 class="text-overlayb">Productos Importados</h2>
-        <img src="imagenes/22623330-asado-de-cerdo-en-un-plato-marrón.webp" style="height: 100%; width: 100%; object-fit: contain"/>
-        <p class="text-overlay">Pruebas nuestros nuevos platillos recien ingresados al país</p>
-      </section>
-
-      <section style="padding: 0%;">
-        <h2 class="text-overlayb">Platillos Refinados</h2>
-        <img src="imagenes/Filete-cubierto-de-oro-shutterstock_2131621529.webp" style="height: 100%; width: 100%; object-fit: contain"/>
-        <p class="text-overlay">
-          Prueba nuestros platillos de la más alta calidad para clientes
-          exclusivos, como tú!
-        </p>
-      </section>
-
-      <section style="padding: 0%;">
-        <h2 class="text-overlayb">Bebidas Frías y Licores</h2>
-        <img src="https://enlacocina.b-cdn.net/wp-content/uploads/2018/07/bebidas-refrescantes.jpg" style="height: 100%; width: 100%; object-fit: contain"/>
-        <p class="text-overlay">Aprovecha esta promoción de 2 bebidas por el precio de 1</p>
-      </section>
-
-      <section style="padding: 0%;">
-        <h2 class="text-overlayb">Zona de Juegos ya Lista</h2>
-        <img src="imagenes/zona-juegos-jkl470m6mq.jpg" style="height: 100%; width: 100%; object-fit: contain"/>
-        <b class="text-overlayc">Nueva zona de juegos para que los niños disfruten y se diviertan</b>
-      </section>
-      <div class="mflyb">
-        <button id="botonci" style="width: 130px; background-color: #DA291C;">INICIAR SESION</button>
-        <input class="buscador" type="text" name="buscador" placeholder="Buscar"/>
-      </div>
-
-      <div class="mfly">
-        <button class="manu">INICIO</button>
-        <button class="manu">MENU</button>
-        <button class="manu">NOSOTROS</button>
-        <button class="manu">CONTACTO</button>
-      </div>
-
-    </main>
-    <footer>
-      <p>
-        <strong> La Granjita Feliz 2023. Todos los derechos reservados.</strong>
-      </p>
-      <br />
-      <p>
-        Si deseas ordenar a través de nuestro call center llama al (503)
-        2257-7777
-      </p>
-      <br />
-      <p>Formas de Pago:</p>
-
-      <figure class="formasPago">
-        <img
-          class="iconosFormasdePago"
-          src="imagenes/icons/efectivo.png"
-          alt="Dinero en Efetivo"
-        />
-        <img
-          class="iconosFormasdePago"
-          src="imagenes/icons/mastercard.png"
-          alt="Mastercard"
-        />
-        <img
-          class="iconosFormasdePago"
-          src="imagenes/icons/visa.png"
-          alt="Visa"
-        />
-
-      </figure>
-      <figure class="formasPago">
-        <a href="https://es-la.facebook.com/"
-          ><img
-            class="iconosRedes"
-            src="imagenes/icons8-facebook.svg"
-            alt="logo Facebook"
-        /></a>
-        <a href="https://twitter.com/?lang=es"
-          ><img
-            class="iconosRedes"
-            src="imagenes/icons8-twitter.svg"
-            alt="logo Twitter"
-        /></a>
-        <a href="https://www.instagram.com/">
-          <img
-            class="iconosRedes"
-            src="imagenes/icons8-instagram.svg"
-            alt="logo Instagram"
-        /></a>
-      </figure>
-    </footer>
-
-
-    <script>
-      function openForm() {
-        document.getElementById("myForm").style.display = "block";
-      }
-      
-      function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-      }
-      </script>
-
-    
-  </body>
+    <head>
+        <title>La Granjita</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsivecss" />
+    </head>
+    <body>
+        <div class="boxmenu">
+            <button class="menus izqu" onclick="window.location.href='index.html'">INICIO</button>
+            <button class="menus izqu" onclick="window.location.href='menu.html'">MENU</button>
+            
+            <div class="cent"><img class="porf" src="https://i.ibb.co/T0j72fF/logob.png"></div>
+            
+            <button class="menus dere" onclick="window.location.href='contacto.html'">CONTACTO</button>
+            <button class="menus dere" onclick="window.location.href='nosotros.html'">NOSOTROS</button>
+            
+            <button class="botonlog">Iniciar sesión</button>
+            <input class="buscador" type="text" name="buscador" placeholder="Buscar"/>
+        </div>
+        <div id="wrapper"><div id="content">
+            
+                <div class="slider" style="max-width: 1280px;">
+                <ul>
+                <li>
+                <img src="https://i0.wp.com/criteriohidalgo.com/wp-content/uploads/2018/11/3e53f637-cookylaucha_20180622_th_landscape_tuetano.jpg?fit=1920%2C1080&ssl=1" alt="" />
+                </li>
+                <li>
+                <img src="https://foodandtravel.mx/wp-content/uploads/2017/11/Carne-de-res.jpg" alt="" />
+                </li>
+                <li>
+                <img src="https://static-sevilla.abc.es/media/gurmesevilla/2013/10/chuleta-venado-verduras.jpg" alt="" />
+                </li>
+                <li>
+                <img src="https://s1.1zoom.me/b5559/853/Meat_products_Mushrooms_Tomatoes_527520_1920x1080.jpg" alt="" />
+                </li>
+                </ul>
+                </div>
+            
+            <div class="container">
+                <div class="box P">
+                    <div class="titulos">Prueba Nuestras Nuevas Promociones</div>
+                    <img src="https://i.ibb.co/BCFVTqs/jugoso-filete-cerdo-parrilla-hueso.jpg" style="height: 100%; width: 100%; object-fit: contain"/>
+                    <div class="fantasma">
+                    Disfruta nuetros nuevos platos exquisitos y ahora con nuevas salsas y bebidas</div>
+                </div>
+                <div class="box P">
+                    <div class="titulos">Nuevos Platos</div>
+                    <img src="https://i.ibb.co/f884mvx/49857.jpg" style="height: 100%; width: 100%; object-fit: contain"/>
+                    <div class="fantasma">
+                    Disfruta nuetros nuevos platos exquisitos y ahora con nuevas salsas y bebidas</div>
+                </div>
+                <div class="box P">
+                    <div class="titulos">Productos Importados</div>
+                    <img src="https://i.ibb.co/9ww0pbr/22623330-asado-de-cerdo-en-un-plato-marr-n.webp" style="height: 100%; width: 100%; object-fit: contain"/>
+                    <div class="fantasma">
+                    Disfruta nuetros nuevos platos exquisitos y ahora con nuevas salsas y bebidas</div>
+                </div>
+                <div class="box P">
+                    <div class="titulos">Platillos Refinados</div>
+                    <img src="https://i.ibb.co/GtvZC4s/Filete-cubierto-de-oro-shutterstock-2131621529.webp" style="height: 100%; width: 100%; object-fit: contain"/>
+                    <div class="fantasma">
+                    Disfruta nuetros nuevos platos exquisitos y ahora con nuevas salsas y bebidas</div>
+                </div>
+                <div class="box P">
+                    <div class="titulos">Bebidas Frías y Licores</div>
+                    <img src="https://enlacocina.b-cdn.net/wp-content/uploads/2018/07/bebidas-refrescantes.jpg" style="height: 100%; width: 100%; object-fit: contain">
+                    <div class="fantasma">
+                    Disfruta nuetros nuevos platos exquisitos y ahora con nuevas salsas y bebidas</div>
+                </div>
+                <div class="box P">
+                    <div class="titulos">Zona de Juegos</div>
+                    <img src="https://i.ibb.co/PT4Cy0g/zona-juegos-jkl470m6mq.jpg" style="height: 100%; width: 100%; object-fit: contain">
+                    <div class="fantasma">
+                    Disfruta nuetros nuevos platos exquisitos y ahora con nuevas salsas y bebidas</div>
+                </div>
+                <div class="box P">
+                    <div class="titulos">A</div>
+                    <div class="fantasma">A</div>
+                </div>
+                <div class="box P">
+                </div>
+                
+            </div>
+            
+        </div></div>
+        <footer>
+            Ordenar a través de nuestro call center al (503) 2121-2222
+            <br><br>Información para Eventos y Piñatas al (503) 2510-2929
+            <br><br>Servicio al cliente
+            <br><br><hr style="width: 80%;"><br>
+            © 2023 La Granjita International LLC. Todos los derechos reservados. El nombre La Granjita, logos, imágenes y marcas relacionadas son marcas registradas of La Granjita Company, La Granjita Int. LLC para El Salvador y Granjita Foods S.A. de C.V. para El Salvador.
+            <br><br>
+            
+            Formas de Pago:
+            <figure class="formasPago">
+                <img class="iconosFormasdePago" src="https://i.ibb.co/9sqTKV1/efectivo.png" alt="Dinero en Efetivo"/>
+                <img class="iconosFormasdePago" src="https://i.ibb.co/mNC8XSf/mastercard.png" alt="Mastercard"/>
+                <img class="iconosFormasdePago" src="https://i.ibb.co/zr7KYcS/visa.png" alt="Visa"/>
+            </figure>
+            
+            <figure class="formasPago">
+                <a href="https://es-la.facebook.com/">
+                    <img class="iconosRedes" src="imagenes/icons8-facebook.svg" alt="logo Facebook"/></a>
+                <a href="https://twitter.com/?lang=es">     
+                    <img class="iconosRedes" src="imagenes/icons8-twitter.svg" alt="logo Twitter"/></a>
+                <a href="https://www.instagram.com/">
+                    <img class="iconosRedes" src="imagenes/icons8-instagram.svg" alt="logo Instagram"/></a>
+            </figure>
+        </footer>
+    </body>
 </html>
