@@ -1,0 +1,92 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Fondo modal: negro con opacidad al 50% */
+.modal {
+  display:none; /* Por defecto, estará oculto */
+  position: fixed; /* Posición fija */
+  z-index: 1; /* Se situará por encima de otros elementos de la página*/
+  padding-top: 200px; /* El contenido estará situado a 200px de la parte superior */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Algura completa */
+  overflow: auto; /* Se activará el scroll si es necesario */
+  background-color: rgba(0,0,0,0.5); /* Color negro con opacidad del 50% */
+}
+
+#ventanaModal{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Ventana o caja modal */
+.contenido-modal {
+  position: relative; /* Relativo con respecto al contenedor -modal- */
+  background-color: white;
+  margin: auto; /* Centrada */
+  padding: 20px;
+  width: 40%;
+  height: 70%;
+  -webkit-animation-name: animarsuperior;
+  -webkit-animation-duration: 0.5s;
+  animation-name: animarsuperior;
+  animation-duration: 0.5s;
+  border-radius: 10px;
+}
+.contenido-modal h2{
+    color: blue;
+    font-size: 23px;
+    text-align: center;
+}
+
+
+ .form-btn{
+    display: block;
+	width: 100%;
+	font-size: 20px;
+	padding: 10px;
+	background-color: #000;
+	color: #fff;
+ }
+
+.contenido-modal form .box{
+    width: 100%;
+	padding: 12px 14px;
+	font-size: 20px;
+	text-transform: none;
+	border: 2px solid #000;
+	margin: 10px 0;
+
+}
+.contenido-modal form p{
+    font-size: 20px;
+	margin-top: 20px;
+}
+
+/* Animación */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animarsuperior {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* Botón cerrar */
+.close {
+  color: black;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
