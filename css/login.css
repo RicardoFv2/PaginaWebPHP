@@ -15,10 +15,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 #ventanaModal{
-    padding: 20px;
+    padding: 145px;
     width: 100%;
     height: 100%;
-
+    
 }
 
 /* Ventana o caja modal */
@@ -36,14 +36,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
   border-radius: 10px;
 }
 .contenido-modal h2{
-    color: blue;
+    color: #F2CA52(255, 222, 11);
     font-size: 23px;
     text-align: center;
 }
 
 
  .form-btn{
-    display: block;
+  display: block;
 	width: 100%;
 	font-size: 20px;
 	padding: 10px;
@@ -56,7 +56,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	padding: 12px 14px;
 	font-size: 20px;
 	text-transform: none;
-	border: 2px solid #000;
+	border: 2px solid #F2CA52;
 	margin: 10px 0;
 
 }
@@ -78,7 +78,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Botón cerrar */
 .close {
-  color: black;
+  color: rgb(249, 126, 69);
   float: right;
   font-size: 30px;
   font-weight: bold;
@@ -86,7 +86,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #fe7739;
   text-decoration: none;
   cursor: pointer;
 }
+
+

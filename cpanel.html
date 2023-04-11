@@ -1,0 +1,165 @@
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Granjita</title>
+    <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="css/login.css" />
+  </head>
+
+  <body>
+    <div class="boxmenu">
+      <button class="menus izqu" onclick="window.location.href='index.php'">
+        INICIO
+      </button>
+      <button class="menus izqu" onclick="window.location.href='menu.html'">
+        MENU
+      </button>
+
+      <div class="cent">
+        <img class="liston" src="https://i.ibb.co/ZYYNFzR/vecteezy-ribbon-1197212.png"/>
+      </div>
+      <div class="cent">
+        <img class="porf" src="https://i.ibb.co/T0j72fF/logob.png" />
+      </div>
+
+      <button class="menus dere" onclick="window.location.href='contacto.html'">
+        CONTACTO
+      </button>
+      <button class="menus dere" onclick="window.location.href='nosotros.html'">
+        NOSOTROS
+      </button>
+      <button class="menus dere" onclick="#"></button>
+
+      <button class="abrirModal" id="abrirModal">Iniciar sesion</button>
+      <input
+        class="buscador"
+        type="text"
+        name="buscador"
+        placeholder="Buscar"
+      />
+    </div>
+    <div id="wrapper">
+      <div id="content">
+
+        <div class="container">
+            <div class="box G">
+
+                <style type="text/css">
+                    .tftable {
+                        table-layout: fixed;
+                        font-size:12px;
+                        color:#333333;
+                        width:100%;
+                        border-width: 1px;
+                        border-color: #efefef;
+                        border-collapse: collapse;
+                        
+                        text-align: center;
+                    }
+                    .tftable th {
+                        font-size:15px;
+                        background-color:#2C3E50;
+                        border-width: 1px;
+                        padding: 8px;
+                        border-style: solid;
+                        border-color: #729ea5;
+                        width: 50px;
+                        word-wrap: break-word;
+                        color: white;
+                    }
+                    .tftable tr {background-color:#ffffff;}
+                    .tftable td {
+                        font-size:14px;
+                        border-width: 1px;
+                        padding: 8px;
+                        border-style: solid;
+                        word-wrap: break-word;
+                        border-color: #729ea5;}
+                    .tftable tr:hover {background-color:#e2e2e2;
+                    }
+
+                    </style>
+                    
+                    <table class="tftable" border="1">
+                    <tr><th>ID</th><th>FOTO</th><th>NOMBRE</th><th>DESCRIPCION</th><th>PRECIO</th><th>INVENTARIO</th><th>ACCIONES</th></tr>
+                    <tr><td>35</td><td style="color: blue;"><img src="https://www.proyectobrujula.com/wp-content/uploads/2021/02/Captura-de-pantalla-2021-02-17-a-las-14.41.45.png" class="porf2"/>EDITAR</td><td>Tomahawke Saltbae 4k</td><td>Carnita con oro</td><td>$400</td><td>10</td><td style="color: red;">ELIMINAR</td></tr>
+                    <tr><td>35</td><td style="color: blue;"><img src="https://www.proyectobrujula.com/wp-content/uploads/2021/02/Captura-de-pantalla-2021-02-17-a-las-14.41.45.png" class="porf2"/>EDITAR</td><td>Tomahawke Saltbae 4kkkkkkkkkkk</td><td>Carnita con orooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</td><td>$400</td><td>10</td><td style="color: red;">ELIMINAR</td></tr>
+                    </table>
+                  </div>
+
+                  <div class="box G">
+                    <table class="tftable" border="1">
+                      <tr><th>ID</th><th>FOTO</th><th>NOMBRE</th><th>DESCRIPCION</th><th>PRECIO</th><th>INVENTARIO</th><th>ACCIONES</th></tr>
+                      <tr><td><input placeholder="16" type="text" id="name" name="name" size="5"></td><td>.</td><td><input placeholder="Chirmol" type="text" id="name" name="name" size="5"></td><td><input placeholder="Tomate, cebolla" type="text" id="name" name="name" size="5"></td><td>$<input placeholder="7.95" type="text" id="name" name="name" size="5"></td><td><input placeholder="21" type="text" id="name" name="name" size="5"></td><td style="color: red;">ELIMINAR</td></tr>
+                      <tr><td><input placeholder="16" type="text" id="name" name="name" size="5"></td><td>.</td><td><input placeholder="Chirmol" type="text" id="name" name="name" size="5"></td><td><input placeholder="Tomate, cebolla" type="text" id="name" name="name" size="5"></td><td>$<input placeholder="7.95" type="text" id="name" name="name" size="5"></td><td><input placeholder="21" type="text" id="name" name="name" size="5"></td><td style="color: red;">ELIMINAR</td></tr>
+                      <tr><td><input placeholder="16" type="text" id="name" name="name" size="5"></td><td>.</td><td><input placeholder="Chirmol" type="text" id="name" name="name" size="5"></td><td><input placeholder="Tomate, cebolla" type="text" id="name" name="name" size="5"></td><td>$<input placeholder="7.95" type="text" id="name" name="name" size="5"></td><td><input placeholder="21" type="text" id="name" name="name" size="5"></td><td style="color: red;">ELIMINAR</td></tr>
+                      
+                      </table>
+                  </div>
+                    
+                  <div class="box G">
+                    <table class="tftable" border="1">
+                      <tr><th>ID</th><th>FOTO</th><th>NOMBRE</th><th>DESCRIPCION</th><th>PRECIO</th><th>INVENTARIO</th><th>ACCIONES</th></tr>
+                      <tr><td><input type="text" id="name" name="name" size="5"></td><td>.</td><td><input type="text" id="name" name="name" size="5"></td><td><input type="text" id="name" name="name" size="5"></td><td><input type="text" id="name" name="name" size="5"></td><td><input type="text" id="name" name="name" size="5"></td><td style="color: green;">AGREGAR</td></tr>
+                      </table>
+                  </div>
+
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <footer>
+      Ordenar a través de nuestro call center al (503) 2121-2222
+      <br /><br />Información para Eventos y Piñatas al (503) 2510-2929
+      <br /><br />Servicio al cliente <br /><br />
+      <hr style="width: 80%" />
+      <br />
+      © 2023 La Granjita International LLC. Todos los derechos reservados. El
+      nombre La Granjita, logos, imágenes y marcas relacionadas son marcas
+      registradas of La Granjita Company, La Granjita Int. LLC para El Salvador
+      y Granjita Foods S.A. de C.V. para El Salvador.
+      <br /><br />
+
+      Formas de Pago:
+      <figure class="formasPago">
+        <img
+          class="iconosFormasdePago"
+          src="img/icons/efectivo.png"
+          alt="Dinero en Efetivo"
+        />
+        <img
+          class="iconosFormasdePago"
+          src="img/icons/mastercard.png"
+          alt="Mastercard"
+        />
+        <img class="iconosFormasdePago" src="img/icons/visa.png" alt="Visa" />
+      </figure>
+
+      <figure class="formasPago">
+        <a href="https://es-la.facebook.com/">
+          <img
+            class="iconosRedes"
+            src="img/icons/icons8-facebook.svg"
+            alt="logo Facebook"
+        /></a>
+        <a href="https://twitter.com/?lang=es">
+          <img
+            class="iconosRedes"
+            src="img/icons/icons8-twitter.svg"
+            alt="logo Twitter"
+        /></a>
+        <a href="https://www.instagram.com/">
+          <img
+            class="iconosRedes"
+            src="img/icons/icons8-instagram.svg"
+            alt="logo Instagram"
+        /></a>
+      </figure>
+    </footer>
+
+  </body>
+</html>

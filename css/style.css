@@ -3,7 +3,7 @@ body{
     margin: 0 auto; 
     min-height: 100vh;
     background-color:#f5f5f5;
-    padding-top: 70px;
+    padding-top: 86px;
 }
 /*---------MENU---------------------------------------------*/
 .boxmenu{
@@ -69,6 +69,9 @@ body{
 .porf{
     height: 100%; width: 100%; object-fit: cover;
 }
+.porf2{
+    height: 100%; width: 100%; object-fit: contain;
+}
 button{ /*Resetea css de <button>*/
 	background: none;
 	color: inherit;
@@ -78,22 +81,38 @@ button{ /*Resetea css de <button>*/
 	cursor: pointer;
 	outline: inherit;
 }
-.botonlog{
+.abrirModal{
     position: absolute;
     background-color: #58B837;
     width: 150px;
     height: 30px;
     bottom: 2px;
-    right: 55px;
+    right: 10px;
     align-items: center;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
     color: #eeeeee;
-}
-.botonlog:hover{
+  }
+  .abrirModal:hover{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}
+  }
+  .abrirCP{
+    position: absolute;
+    background-color: #af2929;
+    width: 150px;
+    height: 30px;
+    bottom: 2px;
+    right: 160px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: #eeeeee;
+  }
+  .abrirCP:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  }
 .buscador{
     background-color: #fbfbfb; 
     width:225px; 
@@ -185,13 +204,14 @@ footer{
 .container {
   display: inline-flex;
   width: 1280px;
-  padding-top: 50px;
+  padding-top: 30px;
   flex-wrap:wrap;
   justify-content: center;
   align-items: stretch;
   gap:18px;
 }
 .box{
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -201,9 +221,11 @@ footer{
     padding: 0;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    transition: .3s;
 }
 .box:hover{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: .3s;
 }
 .P{width: 286px;}
 .L{width: 386px;} 
@@ -306,23 +328,38 @@ footer{
     display: flex;
     padding: 15px;
     width: 100%;
-    height: 100%;
+    min-height: 80px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
 }
 .arroz{
     color: #030303;
+    font-size: 16px;
+    width: 150px;
+    font-weight: 700;
 }
 .botonbuy{
-    background-color: #2390c2;
+    background-color: #FFFFFF;
     width: 100px;
-    height: 30px;
+    height: 40px;
     align-items: center;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
-    color: white;
+    color: #FF8A33;
     position: absolute;
     right: 15px;
+    border-radius: 5px;
+    border: 1px solid #FF8A33;
+    transition: .3s;
+}
+.botonbuy:hover{
+    transition: .3s;
+    background-color: #FF8A33;
+    color: #FFFFFF;
+}
+/*---------------------------------PANEL---------------------------------------*/
+.pastel{
+    { border-collapse: collapse; margin: 25px 0; font-size: 1em; font-family: sans-serif; min-width: 450px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); }
 }

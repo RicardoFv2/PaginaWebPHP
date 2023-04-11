@@ -1,3 +1,20 @@
+<?php
+@include 'config.php';
+session_start();
+if (isset($_POST['submit'])) {
+	$email = mysqli_real_escape_string($conn, $_POST['usermail']);
+	$pass = md5($_POST['password']);
+	$select = "SELECT * from user_form where email = '$email' && password = '$pass'";
+	$result = mysqli_query($conn, $select);
+	if (mysqli_num_rows($result) > 0) {
+		$_SESSION['usermail'] = $email;
+		header('location:header.php');
+	}else{
+		$error[] = 'contraseña o correo electrónico incorrecto.';
+	}
+}
+?>
+
 <html>
   
   <head>
@@ -6,10 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Granjita</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsivecss" />
-    
-    <link rel="stylesheet" href="php/codigo.php" />
-    <link rel="stylesheet" href="css/login.css" />
+   <link rel="stylesheet" href="css/login.css" />
   </head>
   <body>
     <div class="boxmenu">
@@ -35,7 +49,9 @@
       </button>
       <button class="menus dere" onclick="#"></button>
 
-      <button id="abrirModal" >Iniciar sesión</button>
+      <button class="abrirCP" onclick="window.location.href='cpanel.html'">CPanel</button>
+      <button class="abrirModal" id="abrirModal">Iniciar sesion</button>
+
       <input
         class="buscador"
         type="text"
@@ -205,17 +221,44 @@
       </figure>
     </footer>
     <div id="ventanaModal" class="modal">
-      <div class="contenido-modal">
-     <form action="" method="post">
-       <h3>Registrate ahora</h3>
-       <input type="email" name="usermail" placeholder="ingresa tu correo electrónico" class="box" required>
-       <input type="password" name="password" placeholder="ingresa tu contraseña" class="box" required>
-       <input type="password" name="cpassword" placeholder="confirma tu contraseña" class="box" required>
-       <input type="submit" value="Registrate ahora" name="submit" class="form-btn">
-       <p>¿Ya tienes una cuenta? <a href="php/register_form.php">Inicia sesion ahora!</a>
-       </p>
-     </form>
+     <div class="contenido-modal">
+         <span class="cerrar">&times;</span>
+         <h2>Login</h2>
+         <form action="" method="post">
+			<h3 class="title">Login now</h3>
+			<input type="email" name="usermail" placeholder="enter your email" class="box" required>
+			<input type="password" name="password" placeholder="enter your password" class="box" required>
+			<input  type="submit" value="Iniciar Ahora" class="form-btn" name="submit">
+			<p>¿No tienes una cuenta? <a href="php/register_form.php">Registrate ahora</a>
+			</p>
+		</form>
      </div>
    </div>
+   <script> 
+    var modal = document.getElementById("ventanaModal");
+
+// Botón que abre el modal
+var boton = document.getElementById("abrirModal");
+
+// Hace referencia al elemento <span> que tiene la X que cierra la ventana
+var span = document.getElementsByClassName("cerrar")[0];
+
+// Cuando el usuario hace click en el botón, se abre la ventana
+boton.addEventListener("click",function() {
+  modal.style.display = "block";
+});
+
+// Si el usuario hace click en la x, la ventana se cierra
+span.addEventListener("click",function() {
+  modal.style.display = "none";
+});
+
+// Si el usuario hace click fuera de la ventana, se cierra.
+window.addEventListener("click",function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+});
+        </script>
   </body>
 </html>
