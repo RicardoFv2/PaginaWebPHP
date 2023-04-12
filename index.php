@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
   $result = mysqli_query($conn, $select);
   if (mysqli_num_rows($result) > 0) {
     $_SESSION['usermail'] = $email;
-    header('location:header.php');
+    header('location:../php/header.php');
   } else {
     $error[] = 'contraseña o correo electrónico incorrecto.';
   }

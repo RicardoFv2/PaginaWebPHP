@@ -10,37 +10,11 @@
   </head>
 
   <body>
-    <div class="boxmenu">
-      <button class="menus izqu" onclick="window.location.href='index.php'">
-        INICIO
-      </button>
-      <button class="menus izqu" onclick="window.location.href='menu.html'">
-        MENU
-      </button>
 
-      <div class="cent">
-        <img class="liston" src="https://i.ibb.co/ZYYNFzR/vecteezy-ribbon-1197212.png"/>
-      </div>
-      <div class="cent">
-        <img class="porf" src="https://i.ibb.co/T0j72fF/logob.png" />
-      </div>
+              <!-- HEADER CON PHP -->
+  <?php include 'includes/header.php' ?>
+          <!-- HEADER CON PHP -->
 
-      <button class="menus dere" onclick="window.location.href='contacto.html'">
-        CONTACTO
-      </button>
-      <button class="menus dere" onclick="window.location.href='nosotros.html'">
-        NOSOTROS
-      </button>
-      <button class="menus dere" onclick="#"></button>
-
-      <button class="abrirModal" id="abrirModal">Iniciar sesion</button>
-      <input
-        class="buscador"
-        type="text"
-        name="buscador"
-        placeholder="Buscar"
-      />
-    </div>
     <div id="wrapper">
       <div id="content">
 
@@ -93,7 +67,9 @@
                   <div class="box G">
                     <table class="tftable" border="1">
                       <tr><th>ID</th><th>FOTO</th><th>NOMBRE</th><th>DESCRIPCION</th><th>PRECIO</th><th>INVENTARIO</th><th>ACCIONES</th></tr>
-                      <tr><td><input value="16" type="text" id="name" name="name" size="1"></td><td>.</td><td><input value="Chirmol" type="text" id="name" name="name" size="17"></td><td><textarea value="Tomate, cebolla" type="text" id="name" name="name" style="width: 150px;height: 54px;"></textarea></td><td>$<input value="7.95" type="text" id="name" name="name" size="1"></td><td><input value="1" type="text" id="name" name="name" size="1"></td><td><b style="color:#006FE5;">GUARDAR</b><br><p style="color: red;">ELIMINAR</p></td></tr>
+                      <tr><td><input value="16" type="text" id="name" name="name" size="5"></td><td>.</td><td><input value="Chirmol" type="text" id="name" name="name" size="5"></td><td><input value="Tomate, cebolla" type="text" id="name" name="name" size="5"></td><td>$<input value="7.95" type="text" id="name" name="name" size="5"></td><td><input value="21" type="text" id="name" name="name" size="5"></td><td style="color: red;">ELIMINAR</td></tr>
+                      <tr><td><input value="16" type="text" id="name" name="name" size="5"></td><td>.</td><td><input value="Chirmol" type="text" id="name" name="name" size="5"></td><td><input value="Tomate, cebolla" type="text" id="name" name="name" size="5"></td><td>$<input value="7.95" type="text" id="name" name="name" size="5"></td><td><input value="21" type="text" id="name" name="name" size="5"></td><td style="color: red;">ELIMINAR</td></tr>
+                      <tr><td><input value="16" type="text" id="name" name="name" size="5"></td><td>.</td><td><input value="Chirmol" type="text" id="name" name="name" size="5"></td><td><input value="Tomate, cebolla" type="text" id="name" name="name" size="5"></td><td>$<input value="7.95" type="text" id="name" name="name" size="5"></td><td><input value="21" type="text" id="name" name="name" size="5"></td><td style="color: red;">ELIMINAR</td></tr>
                       
                       </table>
                   </div>
@@ -101,7 +77,7 @@
                   <div class="box G">
                     <table class="tftable" border="1">
                       <tr><th>ID</th><th>FOTO</th><th>NOMBRE</th><th>DESCRIPCION</th><th>PRECIO</th><th>INVENTARIO</th><th>ACCIONES</th></tr>
-                      <tr><td><input type="text" id="name" name="name" size="5"></td><td>.</td><td><input type="text" id="name" name="name" size="5"></td><td><input type="text" id="name" name="name" size="5"></td><td><input type="text" id="name" name="name" size="5"></td><td><input type="text" id="name" name="name" size="5"></td><td style="color: green;">AÑADIR</td></tr>
+                      <tr><td><input type="text" id="name" name="name" size="5"></td><td>.</td><td><input type="text" id="name" name="name" size="5"></td><td><input type="text" id="name" name="name" size="5"></td><td><input type="text" id="name" name="name" size="5"></td><td><input type="text" id="name" name="name" size="5"></td><td style="color: green;">AGREGAR</td></tr>
                       </table>
                   </div>
 
@@ -110,54 +86,10 @@
 
       </div>
     </div>
-    <footer>
-      Ordenar a través de nuestro call center al (503) 2121-2222
-      <br /><br />Información para Eventos y Piñatas al (503) 2510-2929
-      <br /><br />Servicio al cliente <br /><br />
-      <hr style="width: 80%" />
-      <br />
-      © 2023 La Granjita International LLC. Todos los derechos reservados. El
-      nombre La Granjita, logos, imágenes y marcas relacionadas son marcas
-      registradas of La Granjita Company, La Granjita Int. LLC para El Salvador
-      y Granjita Foods S.A. de C.V. para El Salvador.
-      <br /><br />
 
-      Formas de Pago:
-      <figure class="formasPago">
-        <img
-          class="iconosFormasdePago"
-          src="img/icons/efectivo.png"
-          alt="Dinero en Efetivo"
-        />
-        <img
-          class="iconosFormasdePago"
-          src="img/icons/mastercard.png"
-          alt="Mastercard"
-        />
-        <img class="iconosFormasdePago" src="img/icons/visa.png" alt="Visa" />
-      </figure>
-
-      <figure class="formasPago">
-        <a href="https://es-la.facebook.com/">
-          <img
-            class="iconosRedes"
-            src="img/icons/icons8-facebook.svg"
-            alt="logo Facebook"
-        /></a>
-        <a href="https://twitter.com/?lang=es">
-          <img
-            class="iconosRedes"
-            src="img/icons/icons8-twitter.svg"
-            alt="logo Twitter"
-        /></a>
-        <a href="https://www.instagram.com/">
-          <img
-            class="iconosRedes"
-            src="img/icons/icons8-instagram.svg"
-            alt="logo Instagram"
-        /></a>
-      </figure>
-    </footer>
+            <!-- FOOTER CON PHP -->
+  <?php include 'includes/footer.php' ?>
+        <!-- FOOTER CON PHP -->
 
   </body>
 </html>

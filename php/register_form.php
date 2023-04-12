@@ -34,8 +34,8 @@ if (isset($_POST['submit'])) {
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/register.css">
-<title>Document</title>
+	<title>Document</title>
+<link rel="stylesheet" href="../css/cssPHP.css">
 </head>
 <body>
 	<div class="form-container">
@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
 			<input type="password" name="password" placeholder="ingresa tu contraseña" class="box" required>
 			<input type="password" name="cpassword" placeholder="confirma tu contraseña" class="box" required>
 			<input type="submit" value="Registrate ahora" name="submit" class="form-btn">
-			<p>¿Ya tienes una cuenta? <a href="login_form.php">Inicia sesion ahora!</a>
+			<p>¿Ya tienes una cuenta? <a href="../index.php">Inicia sesion ahora!</a>
 			</p>
 		</form>
 	</div>
