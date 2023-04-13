@@ -11,9 +11,9 @@
 
   <body>
 
-              <!-- HEADER CON PHP -->
-  <?php include 'includes/header.php' ?>
-          <!-- HEADER CON PHP -->
+    <!-- HEADER CON PHP -->
+    <?php include 'includes/header.php' ?>
+    <!-- HEADER CON PHP -->
 
     <div id="wrapper">
       <div id="content">
@@ -67,9 +67,7 @@
                   <div class="box G">
                     <table class="tftable" border="1">
                       <tr><th>ID</th><th>FOTO</th><th>NOMBRE</th><th>DESCRIPCION</th><th>PRECIO</th><th>INVENTARIO</th><th>ACCIONES</th></tr>
-                      <tr><td><input value="16" type="text" id="name" name="name" size="5"></td><td>.</td><td><input value="Chirmol" type="text" id="name" name="name" size="5"></td><td><input value="Tomate, cebolla" type="text" id="name" name="name" size="5"></td><td>$<input value="7.95" type="text" id="name" name="name" size="5"></td><td><input value="21" type="text" id="name" name="name" size="5"></td><td style="color: red;">ELIMINAR</td></tr>
-                      <tr><td><input value="16" type="text" id="name" name="name" size="5"></td><td>.</td><td><input value="Chirmol" type="text" id="name" name="name" size="5"></td><td><input value="Tomate, cebolla" type="text" id="name" name="name" size="5"></td><td>$<input value="7.95" type="text" id="name" name="name" size="5"></td><td><input value="21" type="text" id="name" name="name" size="5"></td><td style="color: red;">ELIMINAR</td></tr>
-                      <tr><td><input value="16" type="text" id="name" name="name" size="5"></td><td>.</td><td><input value="Chirmol" type="text" id="name" name="name" size="5"></td><td><input value="Tomate, cebolla" type="text" id="name" name="name" size="5"></td><td>$<input value="7.95" type="text" id="name" name="name" size="5"></td><td><input value="21" type="text" id="name" name="name" size="5"></td><td style="color: red;">ELIMINAR</td></tr>
+                      <tr><td><input value="16" type="text" id="name" name="name" size="1"></td><td>.</td><td><input value="Chirmol" type="text" id="name" name="name" size="17"></td><td><textarea value="Tomate, cebolla" type="text" id="name" name="name" style="width: 150px;height: 54px;"></textarea></td><td>$<input value="7.95" type="text" id="name" name="name" size="1"></td><td><input value="1" type="text" id="name" name="name" size="1"></td><td><b style="color:#006FE5;">GUARDAR</b><br><p style="color: red;">ELIMINAR</p></td></tr>
                       
                       </table>
                   </div>
@@ -77,7 +75,7 @@
                   <div class="box G">
                     <table class="tftable" border="1">
                       <tr><th>ID</th><th>FOTO</th><th>NOMBRE</th><th>DESCRIPCION</th><th>PRECIO</th><th>INVENTARIO</th><th>ACCIONES</th></tr>
-                      <tr><td><input type="text" id="name" name="name" size="5"></td><td>.</td><td><input type="text" id="name" name="name" size="5"></td><td><input type="text" id="name" name="name" size="5"></td><td><input type="text" id="name" name="name" size="5"></td><td><input type="text" id="name" name="name" size="5"></td><td style="color: green;">AGREGAR</td></tr>
+                      <tr><td><input type="text" id="name" name="name" size="5"></td><td>.</td><td><input type="text" id="name" name="name" size="5"></td><td><input type="text" id="name" name="name" size="5"></td><td><input type="text" id="name" name="name" size="5"></td><td><input type="text" id="name" name="name" size="5"></td><td style="color: green;">AÑADIR</td></tr>
                       </table>
                   </div>
 
@@ -87,9 +85,9 @@
       </div>
     </div>
 
-            <!-- FOOTER CON PHP -->
-  <?php include 'includes/footer.php' ?>
-        <!-- FOOTER CON PHP -->
+    <!-- FOOTER CON PHP -->
+    <?php include 'includes/footer.php' ?>
+    <!-- FOOTER CON PHP -->
 
   </body>
 </html>

@@ -20,7 +20,7 @@
 
     <button class="menus dere"></button>
 
-    <button class="abrirCP" onclick="window.location.href='cpanel.html'">CPanel</button>
+    <button class="abrirCP" onclick="window.location.href='cpanel.php'">CPanel</button>
 
     <button class="abrirModal" id="abrirModal">Iniciar sesion</button>
 
