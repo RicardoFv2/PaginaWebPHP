@@ -8,6 +8,8 @@
   <title>La Granjita</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsivecss" />
+  <link rel="icon" type="image/x-icon" href="img/icons/cerdoIcon.png">
+
 </head>
 
 <body>

@@ -21,76 +21,29 @@
       <div class="container">
         <!--<img style="object-fit:cover;width: 100%;height: 100%;" src="https://www.vhv.rs/dpng/d/359-3590456_pagina-en-construccion-png-transparent-png.png">-->
 
-        <div class="box P">
-          <img
-            src="https://www.proyectobrujula.com/wp-content/uploads/2021/02/Captura-de-pantalla-2021-02-17-a-las-14.41.45.png"
-            class="porf" />
+          <?php
+          include('conn.php');
+          $query=mysqli_query($conn,"select * from `user`");
+          while($row=mysqli_fetch_array($query)){
+          ?>
+          
+          <div class="box P">
+              
+          <img src="<?php echo $row['foto']; ?>" class="porf">
+              
           <div class="frijol">
-            <div class="arroz">Tomahawk Saltbae 24k</div>
-            <button class="botonbuy">$400</button>
+              
+          <div class="arroz"><?php echo $row['nombre']; ?></div>
+          <div class="fantasma" style="top:0px;left:0px"><?php echo $row['descripcion']; ?></div>
+          <button class="botonbuy"><?php echo $row['precio']; ?></button>
+              
           </div>
-        </div>
-
-        <div class="box P">
-          <img
-            src="https://www.proyectobrujula.com/wp-content/uploads/2021/02/Captura-de-pantalla-2021-02-17-a-las-14.41.45.png"
-            class="porf" />
-          <div class="frijol">
-            <div class="arroz">Tomahawk Saltbae 24k</div>
-            <button class="botonbuy">$400</button>
           </div>
-        </div>
-
-        <div class="box P">
-          <img
-            src="https://www.proyectobrujula.com/wp-content/uploads/2021/02/Captura-de-pantalla-2021-02-17-a-las-14.41.45.png"
-            class="porf" />
-          <div class="frijol">
-            <div class="arroz">Tomahawk Saltbae 24k</div>
-            <button class="botonbuy">$400</button>
-          </div>
-        </div>
-
-        <div class="box P">
-          <img
-            src="https://www.proyectobrujula.com/wp-content/uploads/2021/02/Captura-de-pantalla-2021-02-17-a-las-14.41.45.png"
-            class="porf" />
-          <div class="frijol">
-            <div class="arroz">Tomahawk Saltbae 24k</div>
-            <button class="botonbuy">$400</button>
-          </div>
-        </div>
-
-        <div class="box P">
-          <img
-            src="https://www.proyectobrujula.com/wp-content/uploads/2021/02/Captura-de-pantalla-2021-02-17-a-las-14.41.45.png"
-            class="porf" />
-          <div class="frijol">
-            <div class="arroz">Tomahawk Saltbae 24k</div>
-            <button class="botonbuy">$400</button>
-          </div>
-        </div>
-
-        <div class="box P">
-          <img
-            src="https://www.proyectobrujula.com/wp-content/uploads/2021/02/Captura-de-pantalla-2021-02-17-a-las-14.41.45.png"
-            class="porf" />
-          <div class="frijol">
-            <div class="arroz">Tomahawk Saltbae 24k</div>
-            <button class="botonbuy">$400</button>
-          </div>
-        </div>
-
-        <div class="box P">
-          <img
-            src="https://www.proyectobrujula.com/wp-content/uploads/2021/02/Captura-de-pantalla-2021-02-17-a-las-14.41.45.png"
-            class="porf" />
-          <div class="frijol">
-            <div class="arroz">Tomahawk Saltbae 24k</div>
-            <button class="botonbuy">$400</button>
-          </div>
-        </div>
-
+          
+          <?php
+          }
+          ?>
+          
       </div>
     </div>
   </div>

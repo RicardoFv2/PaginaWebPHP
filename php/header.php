@@ -1,32 +1,48 @@
-<?php
 
-@include 'config.php';
+<header id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="index.php" class="navbar-brand">
+            <h3 class="px-5">
+                <i class="fas fa-shopping-basket"></i> Shopping Cart
+            </h3>
+        </a>
+        <button class="navbar-toggler"
+            type="button"
+                data-toggle="collapse"
+                data-target = "#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-session_start();
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="mr-auto"></div>
+            <div class="navbar-nav">
+                <a href="cart.php" class="nav-item nav-link active">
+                    <h5 class="px-5 cart">
+                        <i class="fas fa-shopping-cart"></i> Cart
+                        <?php
 
-if (!isset($_SESSION['usermail'])) {
-	header('location:login_form.php');
-}
-?>
+                        if (isset($_SESSION['cart'])){
+                            $count = count($_SESSION['cart']);
+                            echo "<span id=\"cart_count\" class=\"text-warning bg-light\">$count</span>";
+                        }else{
+                            echo "<span id=\"cart_count\" class=\"text-warning bg-light\">0</span>";
+                        }
+
+                        ?>
+                    </h5>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+</header>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
-</head>
-<body>
-	<div class="container">
-		<div class="content">
-			<h3>Bienvenido!</h3>
-			<p>
-				Lorem ipsum dolor sit, amet consectetur elit. Dolorem maxime necessitatibus itaque sit adipisci odit debitis temporibus aliquid nisi totam.</p>
-				<p>tu correo electrónico: <span><?php echo $_SESSION['usermail'] ?></span></p>
-				<a href="logout.php" class="logout">cerrar sesion</a>
-		</div>
-	</div>
-</body>
-</html>
+
+
+
+

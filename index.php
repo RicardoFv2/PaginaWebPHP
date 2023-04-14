@@ -1,20 +1,24 @@
 <?php
-@include 'config.php';
+include 'login/config.php';
 session_start();
+
 if (isset($_POST['submit'])) {
-  $email = mysqli_real_escape_string($conn, $_POST['usermail']);
-  $pass = md5($_POST['password']);
-  $select = "SELECT * from user_form where email = '$email' && password = '$pass'";
-  $result = mysqli_query($conn, $select);
-  if (mysqli_num_rows($result) > 0) {
-    $_SESSION['usermail'] = $email;
-    header('location:../php/header.php');
+  $email = mysqli_real_escape_string($conn, $_POST['email']);
+  $pass = mysqli_real_escape_string($conn, md5($_POST['password']));
+
+  $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE email = '$email' AND password = '$pass'") or die('query failed');
+
+  if (mysqli_num_rows($select) > 0) {
+    $row = mysqli_fetch_assoc($select);
+    $_SESSION['user_id'] = $row['id'];
+    header('location:login/index.php');
   } else {
-    $error[] = 'contraseña o correo electrónico incorrecto.';
+    $message[] = 'incorrect password or email!';
   }
 }
 ?>
 
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -24,16 +28,18 @@ if (isset($_POST['submit'])) {
   <title>La Granjita</title>
   <link rel="icon" type="image/x-icon" href="img/icons/cerdoIcon.png">
 
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/login.css" />
+  
+
 </head>
 
 <body>
 
-          <!-- HEADER CON PHP -->
+  <!-- HEADER CON PHP -->
   <?php include 'includes/header.php' ?>
-          <!-- HEADER CON PHP -->
-          
+  <!-- HEADER CON PHP -->
+
   <div id="wrapper">
     <div id="content">
       <div class="slider" style="max-width: 1280px">
@@ -123,22 +129,29 @@ if (isset($_POST['submit'])) {
     </div>
   </div>
 
-        <!-- FOOTER CON PHP -->
+  <!-- FOOTER CON PHP -->
   <?php include 'includes/footer.php' ?>
-        <!-- FOOTER CON PHP -->
-        
+  <!-- FOOTER CON PHP -->
+
+  <?php
+  if (isset($message)) {
+    foreach ($message as $message) {
+      echo '<div class="message" onclick="this.remove();">.' . $message . '</div>';
+    }
+  }
+  ?>
+
   <div id="ventanaModal" class="modal">
     <div class="contenido-modal">
-      <span class="cerrar">&times;</span>
-      <h2>Login</h2>
-      <form action="" method="post">
-        <h3 class="title">Login now</h3>
-        <input type="email" name="usermail" placeholder="enter your email" class="box" required>
-        <input type="password" name="password" placeholder="enter your password" class="box" required>
-        <input type="submit" value="Iniciar Ahora" class="form-btn" name="submit">
-        <p>¿No tienes una cuenta? <a href="php/register_form.php">Registrate ahora</a>
-        </p>
-      </form>
+    <form action="" method="post">
+    <span class="cerrar">&times;</span>
+            <h1>Login now</h1>
+            <input type="email" name="email" required placeholder="enter email" class="box">
+            <input type="password" name="password" required placeholder="enter password" class="box">
+            <button type="submit" name="submit" class="btn" value="login now" > Login now </button>
+            <p>don´t have an account <a href="login/register.php">Register Now</a></p>
+        </form>
+
     </div>
   </div>
   <script>
