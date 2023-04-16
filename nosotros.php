@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>La Granjita</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
   <link rel="stylesheet" href="css/responsivecss" />
   <link rel="icon" type="image/x-icon" href="img/icons/cerdoIcon.png">
 
@@ -23,7 +23,7 @@
       <div class="container">
         <div class="box L">
           <div class="titulos">QUIENES SOMOS</div>
-          <img src="https://i.ibb.co/z2xMcmc/qs.png" class="porf" style="object-fit: contain;" />
+          <img src="img/icons/cerdoIcon.png" class="porf" style="object-fit: contain;" />
           <div class="fantasma">
             Somos una empresa familiar fundada el 31 de julio de 1988, con
             alto conocimiento en la producción y venta de comidas rápidas, la
@@ -37,7 +37,7 @@
 
         <div class="box L">
           <div class="titulos">MISION</div>
-          <img src="https://i.ibb.co/fHBPnYV/102349.png" class="porf" style="object-fit: contain;" />
+          <img src="https://st.depositphotos.com/1092019/3536/i/600/depositphotos_35369309-stock-photo-mission-business-concept.jpg" class="porf" style="object-fit: contain;" />
           <div class="fantasma">
             Tiene como misión darle la excelencia a nuestros productos de
             comidas rápidas con alta calidad, nutritivos sanos y frescos, en
@@ -49,7 +49,7 @@
         </div>
         <div class="box L">
           <div class="titulos">VISION</div>
-          <img src="https://i.ibb.co/XyJ1srD/5481993.png" class="porf" style="object-fit: contain;" />
+          <img src="https://media.istockphoto.com/id/1022774744/es/vector/concepto-de-visi%C3%B3n-empresarial.jpg?s=170667a&w=0&k=20&c=EdJba3h7XGObP3RWXVsBwpLIi1IUYCS0AmewVcWlc_4=" />
           <div class="fantasma">
             Tiene como visión consolidarnos como la mejor empresa a nivel
             nacional, en cuanto a la producción y venta de comidas rápidas,
@@ -62,7 +62,7 @@
         <div class="box M">
           <div class="titulos">Massimo Bottura</div>
           <img
-            src="https://www.cocinayvino.com/wp-content/uploads/2020/11/www.cocinayvino.com-massimo-bottura-y-sus-palabras-ante-el-wef-cronacasocialcom-1-696x392.jpg"
+            src="https://images.ecestaticos.com/JjMiY54z4BKuT8mzuqiONTlNBt4=/0x109:2119x1301/1200x675/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fb02%2F4cc%2F30d%2Fb024cc30d62f4897628336118f716af1.jpg"
             class="porf" />
           <div class="fantasma">
             Nacido y criado en Modena, en la región italiana de Emilia
@@ -90,7 +90,7 @@
             Gordon James Ramsay (Johnstone, Escocia; 8 de noviembre de 1966)
             es un chef, dueño de restaurantes y presentador de televisión
             británico. En toda su carrera gastronómica ha sido condecorado con
-            17 estrellas Michelin, de las que hoy mantiene siete.1​2​ Además
+            17 estrellas Michelin, de las que hoy mantiene siete.​ Además
             de sus facetas culinarias, Ramsay es conocido por presentar
             programas de televisión y espacios de telerrealidad sobre cocina.
           </div>
@@ -102,8 +102,7 @@
             (Collonges-au-Mont-d'Or, Auvernia-Ródano-Alpes; 11 de febrero de
             1926-ib.; 20 de enero de 2018)1​ fue un chef francés, considerado
             el mejor chef del siglo xx y uno de los principales cocineros de
-            la historia fundador e impulsor de la nouvelle cuisine. A partir
-            de 1959 hizo famoso mundialmente el antiguo restaurante familiar.
+            la historia fundador e impulsor de la nouvelle cuisine.
           </div>
         </div>
         <div class="box P">
@@ -113,9 +112,7 @@
             Olvera estudió en el Culinary Institute of America de Nueva York.
             En 2000, en la ciudad de México, inauguró Pujol, restaurante
             situado en 2013 en el lugar 13 entre los 50 mejores restaurantes
-            del mundo y el tercer en Latinoamérica, de acuerdo con la lista de
-            San Pellegrino.1​ En 2012 había sido clasificado en el lugar 36 en
-            el mundo.2​
+            del mundo y el tercer en Latinoamérica.
           </div>
         </div>
       </div>

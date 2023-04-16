@@ -49,7 +49,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	color: #fff;
  }
 
-.contenido-modal form .box{
+.contenido-modal form.box{
     width: 100%;
 	padding: 12px 14px;
 	font-size: 20px;
@@ -57,6 +57,23 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	border: 2px solid #F2CA52;
 	margin: 10px 0;
 
+}
+.box2{
+  width: 100%;
+	padding: 12px 14px;
+	font-size: 20px;
+	text-transform: none;
+	border: 2px solid #F2CA52;
+	margin: 10px 0;
+}
+
+.box3{
+  width: 95%;
+	padding: 12px 14px;
+	font-size: 20px;
+	text-transform: none;
+	border: 2px solid #F2CA52;
+	margin: 10px 0;
 }
 .contenido-modal form p{
     font-size: 20px;

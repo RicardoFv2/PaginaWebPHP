@@ -92,7 +92,7 @@ if (isset($_GET['delete_all'])) {
                 </span></p>
 
             <div class="flex">
-                <a href="login.php" class="btn">Login</a>
+                <a href="../index.php" class="btn">Login</a>
                 <a href="register.php" class="option-btn">Register</a>
                 <a href="../index.php?php echo $user_id; ?>"
                     onclick="return confirm('are you sure you want to logout');" class="delete-btn">logout</a>
