@@ -1,5 +1,5 @@
 <?php 
-include 'config.php';
+include 'login/config.php';
 
 if (isset($_POST['submit'])) {
     $name = mysqli_real_escape_string($conn, $_POST['name']);
@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
     } else{
         mysqli_query($conn, "INSERT INTO `user_form`(name, email, password) VALUES ('$name', '$email', '$pass')") or die('query failed');
         $message[] = 'registered successfully';
-        header('location:../index.php');
+        header('location:login/index.php');
     }
 }
 ?>
@@ -26,8 +26,8 @@ if (isset($_POST['submit'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/login.css" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/login.css" />
 
 
     
@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
 <body>
 
 <?php
-include '../includes/header.php';
+include 'includes/header.php';
 if (isset($message)){
     foreach ($message as $message) {
         echo '<div class="message" onclick="this.remove();">'.$message.'</div>';
@@ -55,6 +55,6 @@ if (isset($message)){
     </div>
 
     <?php
-    include '../includes/footer.php' 
+    include 'includes/footer.php' 
     ?>
 </body>

@@ -1,12 +1,14 @@
-body{
-    max-width: 1280px; 
-    margin: 0 auto; 
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
     min-height: 100vh;
-    background-color:#f5f5f5;
+    background-color: #f5f5f5;
     padding-top: 86px;
 }
+
 /*---------MENU---------------------------------------------*/
-.boxmenu{
+.boxmenu {
     position: fixed;
     background-color: #FFFFFF;
     width: 1280px;
@@ -15,73 +17,89 @@ body{
     z-index: 1000;
     border-bottom: solid 7px #F2CA52;
 }
-.menus{
+
+.menus {
     display: inline-block;
     height: 45px;
     width: 250px;
     background-color: #FF8A33;
-    color:white;
+    color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 22px;
     transition: .3s;
 }
-.menus:hover{
+
+.menus:hover {
     display: inline-block;
     height: 45px;
     width: 250px;
     background-color: #d47831;
-    color:black;
+    color: black;
     transition: .3s;
 }
-.menus:active{
+
+.menus:active {
     display: inline-block;
     height: 45px;
     width: 250px;
     background-color: white;
-    color:white;
+    color: white;
 }
-.izqu{
+
+.izqu {
     display: flex;
     float: left;
     align-items: center;
     justify-content: center;
 }
 
-.dere{
+.dere {
     display: flex;
     float: right;
     align-items: center;
     justify-content: center;
 }
-.cent{/*EL LOGO*/
+
+.cent {
+    /*EL LOGO*/
     position: absolute;
     height: 94px;
     left: 425px;
     z-index: 10000
 }
-.liston{
+
+.liston {
     width: 410px;
-    height: 110px; 
+    height: 110px;
     position: absolute;
     top: -5px;
     transform: rotate(5deg);
 }
-.porf{
-    height: 100%; width: 100%; object-fit: cover;
+
+.porf {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
-.porf2{
-    height: 100%; width: 100%; object-fit: contain;
+
+.porf2 {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
-button{ /*Resetea css de <button>*/
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+
+button {
+    /*Resetea css de <button>*/
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
-.abrirModal{
+
+.abrirModal {
     position: absolute;
     background-color: #58B837;
     width: 150px;
@@ -93,14 +111,16 @@ button{ /*Resetea css de <button>*/
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 22px;
     color: #eeeeee;
-  }
-  .abrirModal:hover{
+}
+
+.abrirModal:hover {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    color:black;
+    color: black;
     transition: .3s;
 
-  }
-  .abrirCP{
+}
+
+.abrirCP {
     position: absolute;
     background-color: #af2929;
     width: 150px;
@@ -112,114 +132,150 @@ button{ /*Resetea css de <button>*/
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 22px;
     color: #eeeeee;
-  }
-  .abrirCP:hover{
+}
+
+.abrirCP:hover {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    color:black;
+    color: black;
     transition: .3s;
 }
-  
-.buscador{
-    background-color: #fbfbfb; 
-    width:225px; 
-    height: 30px; 
-    border-radius: 10px;  
-    border-style: solid; 
-    border-width: 1px; 
+
+.buscador {
+    background-color: #fbfbfb;
+    width: 225px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
     border-color: #c5c5c5;
     left: 7px;
     bottom: 2px;
     position: absolute;
 }
+
 /*------------FOOTER------------------------------------*/
-footer{
-    height:500px;
-    bottom:0;
-    width:1280px;
+footer {
+    height: 540px;
+    bottom: 0;
+    width: 1280px;
     background-color: #030303;
     color: darkgray;
     padding: 20px;
     text-align: center;
     border-top: solid 10px #F2CA52;
-    box-sizing: border-box;/*corrige padding vs width*/
+    box-sizing: border-box;
+    font-family: sans;
+
+    /*corrige padding vs width*/
 }
+
 #wrapper {
     min-height: 75%;
     background-color: #f2f2f2;
     width: 1280px;
-    position: relative;/*https://gist.github.com/malexandersalazar/8b79d4f7ba55f86d5bd3f3032d926268*/
+    position: relative;
+    /*https://gist.github.com/malexandersalazar/8b79d4f7ba55f86d5bd3f3032d926268*/
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 #content {
     padding-bottom: 30px;
 }
-.formasPago{
-  display: flex;
-  justify-content: center;
-  
-}
-.iconosFormasdePago{
-  height: 40px;
-  margin-right: 20px;
-  max-width: 100%;
-  border-radius: 10px;
+
+.formasPago {
+    display: flex;
+    justify-content: center;
+
 }
 
-.iconosRedes{
+.iconosFormasdePago {
+    height: 40px;
+    margin-right: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.iconosRedes {
     height: 59px;
-  margin-right: 20px;
-  max-width: 100%;
+    margin-right: 20px;
+    max-width: 100%;
 }
 
-.tituloFooter{
+.tituloFooter {
     font-size: 25px;
 }
+
 /*-----------SLIDER--------------------------------------*/
 .slider {
-	width: 1280;
+    width: 1280;
     height: 420px;
-	margin:auto;
-	overflow: hidden;
+    margin: auto;
+    overflow: hidden;
 }
+
 .slider ul {
-	display: flex;
-	padding: 0;
-	width: 400%;
-	animation: cambio 20s infinite alternate linear;
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate linear;
 }
+
 .slider li {
-	width: 100%;
-	list-style: none;
+    width: 100%;
+    list-style: none;
 }
 
 .slider img {
-	width: 100%;
+    width: 100%;
 }
+
 @keyframes cambio {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
 }
+
 /*--------------CONTENEDORES MENU-------------------------------*/
 
 .container {
-  display: inline-flex;
-  width: 1280px;
-  padding-top: 30px;
-  flex-wrap:wrap;
-  justify-content: center;
-  align-items: stretch;
-  gap:18px;
+    display: inline-flex;
+    width: 1280px;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 18px;
 }
-.box{
+
+.box {
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -232,21 +288,43 @@ footer{
     box-sizing: border-box;
     transition: .3s;
 }
-.box:hover{
+
+.box:hover {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     transition: .3s;
 }
-.P{width: 286px;}
-.L{width: 386px;} 
-.M{width: 589px;} /*Tamaños*/
-.MG{width: 892px;}
-.G{width: 1196px;}
 
-.box img{border-radius:inherit;}
-.box .fantasma{border-radius:inherit;}
+.P {
+    width: 286px;
+}
+
+.L {
+    width: 386px;
+}
+
+.M {
+    width: 589px;
+}
+
+/*Tamaños*/
+.MG {
+    width: 892px;
+}
+
+.G {
+    width: 1196px;
+}
+
+.box img {
+    border-radius: inherit;
+}
+
+.box .fantasma {
+    border-radius: inherit;
+}
 
 /*---Textos---*/
-.fantasma{
+.fantasma {
     position: absolute;
     display: flex;
     color: white;
@@ -261,13 +339,16 @@ footer{
     box-sizing: border-box;
     opacity: 1%;
     transition: .3s;
+    font-family: sans;
 }
-.fantasma:hover{
+
+.fantasma:hover {
     position: absolute;
     display: flex;
     color: white;
     font-weight: 100;
     font-size: 22px;
+    font-family: sans;
     backdrop-filter: blur(8px) brightness(19%);
     height: 100%;
     width: 100%;
@@ -279,60 +360,66 @@ footer{
     /* text-shadow: 0 0 3px #000000, 0 0 10px #000000; */
     transition: .3s;
     
+
 }
-.titulos{
-    position:absolute;
+
+.titulos {
+    position: absolute;
     top: 0;
     left: 0;
     padding: 1rem;
     font-size: 20px;
     font-weight: 100;
-    color:white;
+    color: white;
     backdrop-filter: blur(8px) brightness(40%);
-    
+    font-family: sans;
 }
+
 /*-----------------FORMULARIO-----------------------------------*/
-.input0{
-  background-color: #fbfbfb; 
-  width: 100%; 
-  height: 35px; 
-  border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
-  border-color: #ffc400; 
-  margin-top: 10px;  
-  padding-left: 10px;
-  margin-bottom: 20px; 
+.input0 {
+    background-color: #fbfbfb;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffc400;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
 }
-.textarea0{
-  background-color: #fbfbfb; 
-  width: 100%; 
-  height: 80px; 
-  border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
-  border-color: #ffc400; 
-  margin-top: 10px;  
-  padding-left: 10px;
-  margin-bottom: 20px; 
-  padding-top: 15px; 
+
+.textarea0 {
+    background-color: #fbfbfb;
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffc400;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
 }
-.button0{
-  height: 45px; 
-  background-color: #ffc400; 
-  border-color: #ffc400; 
-  border-style: solid; 
-  border-radius: 10px;  
-  width: 100%;   
-  cursor: pointer;
-  color: #fff;
-  height: 35px;
-  background: rgba(162, 1, 1, 0.3);
-  border-radius: 3px;
-  transition: all 1s ease;
+
+.button0 {
+    height: 45px;
+    background-color: #ffc400;
+    border-color: #ffc400;
+    border-style: solid;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+    height: 35px;
+    background: rgba(162, 1, 1, 0.3);
+    border-radius: 3px;
+    transition: all 1s ease;
 }
+
 /*-----------------------------MENU HTML----------------------------------*/
-.frijol{
+.frijol {
     display: flex;
     padding: 15px;
     width: 100%;
@@ -341,14 +428,16 @@ footer{
     display: flex;
     align-items: center;
 }
-.arroz{
+
+.arroz {
     color: #6d6875;
     font-family: 'Anuphan-VariableFont_wght';
     font-size: 16px;
     width: 150px;
     font-weight: 700;
 }
-.botonbuy{
+
+.botonbuy {
     background-color: #FFFFFF;
     width: 100px;
     height: 40px;
@@ -363,11 +452,15 @@ footer{
     border: 1px solid #FF8A33;
     transition: .3s;
 }
-.botonbuy:hover{
+
+.botonbuy:hover {
     transition: .3s;
     background-color: #FF8A33;
     color: #FFFFFF;
 }
+
+
+
 /*---------------------------------PANEL---------------------------------------*/
 /* .pastel{
     { border-collapse: collapse; margin: 25px 0; font-size: 1em; font-family: sans-serif; min-width: 450px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); }

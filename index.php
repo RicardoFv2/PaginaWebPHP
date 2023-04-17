@@ -28,8 +28,9 @@ if (isset($_POST['submit'])) {
   <title>La Granjita</title>
   <link rel="icon" type="image/x-icon" href="img/icons/cerdoIcon.png">
 
-  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="CSS/login.css" />
+  <link rel="stylesheet" href="css/font.css">
   
 
 </head>
@@ -149,7 +150,7 @@ if (isset($_POST['submit'])) {
             <input type="email" name="email" required placeholder="enter email" class="box3">
             <input type="password" name="password" required placeholder="enter password" class="box3">
             <button type="submit" name="submit" class="btn" value="login now" > Login now </button>
-            <p>don´t have an account <a href="login/register.php">Register Now</a></p>
+            <p>don´t have an account <a href="register.php">Register Now</a></p>
         </form>
 
     </div>
